@@ -1,0 +1,46 @@
+name: 🕒 Waka Readme Stats
+
+on:
+  # Trigger manually
+  workflow_dispatch:
+  
+  # Scheduled run: Daily at 12 AM UTC / 5:30 AM IST
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-readme:
+    name: 📊 Update WakaTime Metrics in README
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧮 Generate and Update WakaTime Stats
+        uses: athul/waka-readme@master # Do NOT change this action
+        with:
+          # 🔐 API Key from GitHub Secrets
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
+          # 📋 Configuration
+          SHOW_TITLE: true
+          TIME_RANGE: all_time       # Options: last_7_days | last_30_days | last_6_months | all_time
+          LANG_COUNT: 10
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          SHOW_MASKED_TIME: true
+          STOP_AT_OTHER: true
+          IGNORED_LANGUAGES: >
+            YAML
+            JSON
+            TOML
+            Text
+            CSV
+            GitIgnore file
+            textmate
+
+          # 📝 Commit Configuration
+          COMMIT_MESSAGE: "📈 Updated WakaTime stats in README"
+          TARGET_BRANCH: master
+          TARGET_PATH: README.md
+          COMMITTER_NAME: GitHubActionBot
+          COMMITTER_EMAIL: action-bot@github.com
+          
