@@ -39,8 +39,5 @@ jobs:
 
           # 📝 Commit Configuration
           COMMIT_MESSAGE: "📈 Updated WakaTime stats in README"
-          TARGET_BRANCH: master
           TARGET_PATH: README.md
-          COMMITTER_NAME: GitHubActionBot
-          COMMITTER_EMAIL: action-bot@github.com
           
