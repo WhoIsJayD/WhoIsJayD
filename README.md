@@ -122,6 +122,20 @@ me.say_hi()
 <td width="50%" valign="top">
 
 <!--START_SECTION:waka-->
+
+```txt
+From: 03 July 2022 - To: 10 June 2025
+
+Total Time: 358 hrs 7 mins
+
+Python                 286 hrs 56 mins ████████████████████░░░░░   80.12 %
+HTML                   11 hrs 53 mins  ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.32 %
+TypeScript             7 hrs 31 mins   ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.10 %
+Markdown               5 hrs 9 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.44 %
+GitIgnore file         2 hrs 56 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.82 %
+JavaScript             2 hrs 18 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   00.65 %
+```
+
 <!--END_SECTION:waka-->
 </td>
 </tr>
